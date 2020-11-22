@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+#logo {
+    font-size: 22px;
+    margin-right: auto;
+} 
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 40px 0 0;
+  font-family: Helvetica, Light;
+}
+
+nav li {
+  display: inline;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+header button {
+  background: #c1f7d5;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Section 1 */
+#section1 {
+    background: url(../assets/home/annie-spratt-135307-unsplash.png) no-repeat;
+    background-size: auto;
+    height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 834px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+  #donate-btn {
+    order: 2;
+  }
+
+  nav {
+    order: 3;
+    margin-right: auto;
+    padding-right: 0;
+    margin-left: -10px;
+  }
+
+  nav li {
+    padding-left: 10px;
+  }
+}
+
+/* 376 */
+@media (max-width: 442px) {
+  .navbar {
+    margin-top: 15px;
+  }
+
+  nav {
+    order: 2;
+    margin-left: auto;
+    margin-right: 0px;
+    flex-basis: 50%;
+  }
+
+  #logo {
+    flex-basis: 50%;
+    font-size: 18px;
+  }
+
+  nav ul {
+    float: right;
+  }
+
+  nav li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  #donate-btn {
+    flex-basis: 100%;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
