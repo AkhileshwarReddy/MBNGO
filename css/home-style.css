@@ -16,7 +16,11 @@ body {
 }
 
 .dark-header-box, .white-header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
+  line-height: 17px;
   width: 160px;
   height: 40px;
   text-transform: uppercase;
@@ -46,6 +50,17 @@ nav li {
   font-size: 1rem;
   padding: 0 20px;
   margin: 0 20px;
+}
+
+header a:link, header a:visited,
+header a:hover, header a:active {
+  text-decoration: none;
+  color: #354463;
+  background: #c1f7d5;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
 }
 
 button {
@@ -164,7 +179,6 @@ button {
   background: #354463;
   margin: 0;
   padding: 0;
-  display: none;
 }
 
 .wwd-container {
@@ -280,9 +294,6 @@ footer {
 }
 
 .dyk-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: 7%;
 }
@@ -741,7 +752,6 @@ footer {
   }
 }
 
-/* 376 */
 @media (max-width: 425px) {
   .navbar {
     margin-top: 15px;
@@ -859,11 +869,6 @@ footer {
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-
-  .news-events-detail .white-header-box {
-    position: absolute;
-    top: -2%;
   }
 
   .news-events-detail {

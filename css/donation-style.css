@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.56px;
+    color: #ffffff;
+}
+
+input, select {
+    display: block;
+    color: #ffffff;
+    background: transparent;
+    padding: 10px 10px 10px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #c1f7d5;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+}
+
+select {
+    margin-top: 6%;
+}
+
+.input-div {
+    margin: 2% 1%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 2%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+}
+
+button {
+  background: #c1f7d5;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+}
+
+/* Form Section */
+#donation-form {
+  background: url(../assets/donation/annie-spratt-427340-unsplash.png) no-repeat;
+}
+
+#donation-quote {
+  font-family: Flood Std;
+  color: #ffffff;
+  font-size: 72px;
+  line-height: 76px;
+  flex-basis: 60%;
+  margin: 0% 6%;
+}
+
+.donation-container {
+  display: flex;
+  padding: 5% 10%;
+  justify-content: space-around;
+}
+
+.form-container {
+    background: #354463;
+    flex-basis: 90%;
+}
+
+.form-container h1 {
+    color: #ffffff;
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-container * {
+    width: 95%;
+}
+
+#first-name {
+    margin-right: 10%;
+}
+
+#street-address {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.city-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.city-container * {
+    width: 90%;
+}
+
+.city-container #city {
+    /* flex-grow: 2; */
+    flex-basis: 50%;
+}
+
+.city-container #state {
+    /* flex-grow: 1; */
+    flex-basis: 25%;
+}
+
+.city-container #zip-code {
+    /* flex-basis: 40%; */
+    flex-basis: 25%;
+}
+
+#email {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#credit-card {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#expiration {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#expiration * {
+    width: 80%;
+}
+
+.expiration-cvv {
+    display: flex;
+}
+
+.expiration-cvv * {
+    width: 50%;
+}
+
+.donation-form-text {
+    font-size: 28px;
+    line-height: 36px;
+    margin-top: 5%;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+}
+
+.form-buttons a {
+    color: #c1f7d5;
+    font-size: 16px;
+    letter-spacing: -0.16px;
+}
+
+
+
+/* Footer */
+footer {
+  padding: 5%;
+}
+
+#footer-logo {
+  font-size: 22px;
+  line-height: 28px;
+  color: #354463;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container div {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container div h1 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.56px;
+}
+
+.footer-container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container li {
+  list-style-type: none;
+}
+
+.footer-container a {
+  color: #354463;
+  text-decoration: none;
+}
+
+.address,
+.footer-container li {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-flow: row wrap;
+  }
+
+  .footer-container img {
+    order: 5;
+  }
+
+  .footer-container div {
+    width: 25%;
+    margin: 1%;
+  }
+
+  #footer-logo {
+    flex-grow: 1;
+  }
+
+  .address {
+    flex-grow: 1;
+  }
+
+  .follow-us {
+    order: 3;
+    flex-grow: 1;
+  }
+
+  .links {
+    order: 4;
+    flex-grow: 1;
+    flex-basis: 50%;
+    position: relative;
+    left: 35%;
+  }
+
+  .footer-container hr {
+    visibility: hidden;
+  }
+
+  .footer-container ul,
+  .address p {
+    margin-top: -10px;
+  }
+
+  .footer-container li a {
+    text-decoration: underline;
+  }
+
+  .footer-container img {
+    height: 15vh;
+    width: auto;
+    position: relative;
+    right: 5%;
+    top: 5%;
+  }
+
+  .donation-container {
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .form-container {
+      order: 2;
+  }
+
+  #donation-quote {
+      font-size: 44px;
+      line-height: 46px;
+      text-align: center;
+      margin: 4% 8%;
+  }
+}
+
+@media (max-width: 425px) {
+  #footer-logo {
+    font-size: 18px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer-container div {
+    width: 80%;
+  }
+
+  .links {
+    position: relative;
+    left: 0%;
+  }
+
+  .footer-container img {
+    position: relative;
+    left: 80%;
+    padding: 5%;
+    margin: 5%;
+  }
+
+  label {
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.44px;
+  }
+
+  #payment-information h1, #your-information h1 {
+      font-size: 20px;
+      line-height: 26px;
+  }
+
+  input, select {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.16px;
+  }
+
+  #donation-quote {
+      font-size: 30px;
+      line-height: 46px;
+      text-align: left;
+      margin: 0;
+  }
+
+  #expiration #year {
+      padding-top: 20%;
+  }
+
+  .expiration-cvv * {
+      width: 90%;
+  }
+
+  .donation-form-text {
+      font-size: 18px;
+      line-height: 22px;
+  }
+
+  .form-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .form-buttons a {
+      order: 2;
+  }
+
+  .form-buttons button {
+      width: 100%;
+      padding: 5%;
+  }
+
+  .form-buttons a {
+      margin-top: 5%;
+      padding: 2%;
+  }
+}
