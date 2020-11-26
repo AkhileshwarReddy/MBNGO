@@ -78,7 +78,7 @@ button {
 }
 
 /* Section 1 */
-#section1 {
+#the-issue {
     background: url(../assets/home/annie-spratt-135307-unsplash@3x.png) no-repeat;
     background-size: cover;
     width: 100%;
@@ -133,7 +133,7 @@ button {
 }
 
 /* Section 2 */
-#section2 {
+#take-action {
   background: #C1F7D5;
   width: 100%;
   height: auto;
@@ -175,7 +175,7 @@ button {
 }
 
 /* Section 3 */
-#section3 {
+#what-we-do {
   background: #354463;
   margin: 0;
   padding: 0;
@@ -193,28 +193,55 @@ button {
   font-size: 44px;
   font-weight: bold;
   line-height: 56px;
-  height: 140px;
+  /* height: 140px; */
   text-align: left;
 }
 
 .missions {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-flex-end;
   align-items: flex-start;
 }
 
 .mission {
   background: #ffffff;
+  margin-right: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  position: relative;
 }
 
 .mission img {
   height: 224px;
   width: 320px;
+  position: relative;
+  left: 10%;
+  margin-top: -10%;
 }
 
+.mission-content {
+  padding-left: 10%;
+}
+
+.mission-content p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.16;
+  width: 90%;
+}
+
+.mission-content h1 {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: left;
+}
+
+.mission-content button {
+  margin: 5% 0;
+}
+
+/* Footer */
 footer {
   padding: 5%;
 }
@@ -263,7 +290,7 @@ footer {
 }
 
 /* Section 4 */
-#section4 {
+#did-you-know {
   background: url(../assets/home/did-you-know-background.png) no-repeat;
   background-size: cover;
 }
@@ -374,7 +401,7 @@ footer {
 }
 
 /* Section 6 */
-#section6 {
+#latest-news-and-events {
   background: #354463;
 }
 
@@ -510,7 +537,7 @@ footer {
     padding-left: 10px;
   }
 
-  #section1 {
+  #the-issue {
     background: url(../assets/home/annie-spratt-135307-unsplash@2x.png) no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -581,6 +608,46 @@ footer {
 
   .action p {
     width: 80%;
+  }
+
+  .missions {
+    flex-direction: column;
+  }
+
+  .mission {
+    flex-direction: row;
+    margin: 10% auto;
+  }
+
+  .mission button {
+    padding: 15px 35px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 30%;
+  }
+
+  .mission img {
+    width: 288px;
+    height: 201px;
+    left: 5%;
+  }
+
+  .mission-content p {
+    font-size: 16px;
+    letter-spacing: -0.16px;
+    line-height: 24px;
+  }
+
+  .mission-content h1 {
+    font-size: 22px;
+    line-height: 28px;
+    width: 60%;
+  }
+
+  .wwd-mission-text {
+    font-size: 36px;
+    line-height: 46px;
   }
 
   .footer-container {
@@ -702,7 +769,7 @@ footer {
     left: 10%;
   }
   
-  #section5 {
+  #stories {
     height: 100vh;
   }
 
@@ -771,6 +838,10 @@ footer {
   
   #footer-logo {
     font-size: 18px;
+  }
+
+  header a {
+    text-align: center;
   }
 
   nav ul {
@@ -964,5 +1035,47 @@ footer {
     margin: 0 auto;
     top: -25%;
     left: 5%;
+  }
+
+  .wwd-mission-text {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mission img {
+    width: 248px;
+    height: 176px;
+    position: relative;
+    left: 0%;
+  }
+
+  .mission-content {
+    padding-left: auto;
+  }
+
+  .mission-content button {
+    position: relative;
+    left: 25%;
+    padding: 10px 20px;
+  }
+
+  .mission-content h1 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    width: 90%;
+  }
+
+  .mission-content p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: 20px;
+    padding: 2%;
   }
 }
